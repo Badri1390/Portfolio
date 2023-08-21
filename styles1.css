@@ -1,0 +1,179 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: whitesmoke;
+}
+
+.night {
+  background-color: gray;
+}
+
+.conteiner {
+  padding: 5px;
+  height: 900vh;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 80px;
+  padding-top: 30px;
+  font-size: large;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.moon {
+  max-width: 40px;
+  padding-left: 15px;
+}
+
+.moon:hover {
+  cursor: pointer;
+}
+
+.link {
+  transition-duration: 0.5s;
+  transition-property: all;
+  font-size: larger;
+}
+
+.link:hover {
+  text-decoration-line: underline;
+  color: rgb(7, 80, 49);
+  cursor: pointer;
+}
+
+.resume img {
+  width: 40px;
+  display: block;
+  padding-top: 10px;
+  transition-duration: 1s;
+  transition-property: all;
+}
+
+.resume img:hover {
+  transform: rotate(360deg);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mainItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 30px;
+}
+
+.mainItem p {
+  letter-spacing: 2px;
+  font-size: large;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.mainItem h2 {
+  text-shadow: 0.5px 0.5px 0.5px;
+}
+
+.photo img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+section img {
+  max-width: 30px;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: larger;
+}
+
+/* label {
+  padding-right: 10px;
+  font-size: 1rem;
+} */
+@media (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  nav {
+    gap: 20px;
+  }
+
+  .info {
+    order: 1;
+  }
+
+  .photo img {
+    width: 150px;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+}

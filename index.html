@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <header class="header">
+        <div class="logo txt">Badri</div>
+        <nav>
+          <div class="link txt">Home</div>
+          <div class="link txt">Skils</div>
+          <div class="link txt">Contact</div>
+          <div class="dayNight">
+            <img class="moon" src="./imges/moon.png" alt="moon" />
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="resume mainItem">
+          <a
+            href="https://github.com/Badri1390?tab=repositories"
+            target="_blank"
+          >
+            <img src="./imges/github.svg" alt="" />
+          </a>
+          <a
+            href="https://korolev.hh.ru/resume/60ed0676ff0bc849ad0039ed1f646a44574946"
+            target="_blank"
+          >
+            <img src="./imges/hh.png" alt="" />
+          </a>
+        </div>
+        <div class="info mainItem">
+          <h1 class="txt">Hi, my name is Badri</h1>
+          <h2 class="txt">Frontend developer</h2>
+          <p class="txt">
+            I develop websites using <br />
+            various approaches and<br />using the BEM methodology.
+          </p>
+        </div>
+        <div class="photo"><img src="./imges/selfi.jpg" alt="selfi" /></div>
+      </main>
+
+      <section>
+        <div>Skills</div>
+        <div>
+          <img src="./imges/frontend.png" alt="" />
+          Frontend Developer
+        </div>
+        <div>
+          <img src="./imges/html.png" alt="" />HTML
+          <progress id="file" max="100" value="80"></progress>80%
+        </div>
+        <div>
+          <img src="./imges/css.png" alt="" />CSS
+          <progress id="file" max="100" value="80"></progress>80%
+        </div>
+        <div>
+          <img src="./imges/js.png" alt="" />JavaScript
+          <progress id="file" max="100" value="70"></progress>70%
+        </div>
+        <div>
+          <img src="./imges/react.png" alt="" />React
+          <progress id="file" max="100" value="30"></progress>30%
+        </div>
+      </section>
+    </div>
+    <script>
+      function background(bgColor, txtColor) {
+        document.body.classList.toggle("night");
+        if (!document.body.classList.contains("night")) {
+          textContent.forEach((el) => (el.style.color = "black"));
+          night.setAttribute("src", "./imges/moon.png");
+        } else {
+          textContent.forEach((el) => (el.style.color = txtColor));
+          night.setAttribute("src", "./imges/sun.png");
+        }
+      }
+
+      let textContent = document.querySelectorAll(".txt");
+      let night = document.querySelector(".moon");
+      night.addEventListener("click", () => background("gray", "white"));
+    </script>
+  </body>
+</html>
