@@ -284,4 +284,8 @@ section div {
     justify-content: center;
     gap: 50px;
   }
+
+  .projects_list {
+    flex-wrap: wrap;
+  }
 }
