@@ -84,7 +84,19 @@
           <progress id="file" max="100" value="30"></progress>30%
         </div>
       </section>
+
+      <section class="projects">
+        <button class="glow-on-hover"><i>Go to projects</i></button>
+        <div class="projects_list">
+          <a href="http://127.0.0.1:5500/ToDo_list/index.html" target="_blank">
+            <div class="progect_item item_one"></div
+          ></a>
+          <div class="progect_item">Coming soon...</div>
+          <!-- <div class="progect_item">Coming soon...</div> -->
+        </div>
+      </section>
     </div>
+
     <script>
       function background(bgColor, txtColor) {
         document.body.classList.toggle("night");
@@ -100,6 +112,11 @@
       let textContent = document.querySelectorAll(".txt");
       let night = document.querySelector(".moon");
       night.addEventListener("click", () => background("gray", "white"));
+
+      let myProjects = document.querySelector(".projects_list");
+      document.querySelector(".glow-on-hover").addEventListener("click", () => {
+        myProjects.classList.toggle("visible")
+      });
     </script>
   </body>
 </html>
