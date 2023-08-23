@@ -286,6 +286,7 @@ section div {
   }
 
   .projects_list {
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
   }
 }
