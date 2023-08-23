@@ -45,7 +45,7 @@ body {
 
 .conteiner {
   padding: 5px;
-  height: 150vh;
+  height: 200vh;
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
@@ -252,17 +252,19 @@ section div {
 }
 
 .progect_item {
-  width: 200px;
-  height: 75px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 400px;
+  height: 150px;
   background-color: rgb(205, 205, 205);
+  transition: all 0.2s ease-in-out;
+}
+
+.progect_item:hover {
+  transform: scaleY(1.1);
 }
 
 .item_one {
   background-image: url("./imges/todo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-color: whitesmoke;
 }
 
@@ -288,5 +290,16 @@ section div {
   .projects_list {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .progect_item {
+    width: 210px;
+    height: 80px;
+  }
+}
+
+@media (min-device-width: 568px) and (max-device-width: 800px){
+  .photo img {
+    width: 200px;
   }
 }
