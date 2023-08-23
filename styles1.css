@@ -304,6 +304,6 @@ section div {
 
 @media (min-device-width: 568px) and (max-device-width: 800px){
   .photo img {
-    width: 200px;
+    width: 150px;
   }
 }
