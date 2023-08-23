@@ -267,8 +267,12 @@ section div {
   background-size: cover;
   background-color: whitesmoke;
 }
-
-@media (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+@media screen and (orientation: landscape) {
+  body{
+    height: 300vh;
+  }
+}
+@media (min-device-width: 320px) and (max-device-width: 568px) {
   nav {
     gap: 20px;
   }
