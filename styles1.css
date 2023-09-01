@@ -267,6 +267,11 @@ section div {
   background-size: cover;
   background-color: whitesmoke;
 }
+
+.item_two {
+  background-image: url("./imges/poiskovik.png");
+  background-size: cover;
+}
 @media screen and (orientation: landscape) {
   body{
     height: 300vh;
