@@ -272,6 +272,11 @@ section div {
   background-image: url("./imges/poiskovik.png");
   background-size: cover;
 }
+
+.item_three {
+  background-image: url("./imges/mst.png");
+  background-size: cover;
+}
 @media screen and (orientation: landscape) {
   body{
     height: 300vh;
